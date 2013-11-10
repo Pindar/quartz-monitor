@@ -4,6 +4,7 @@ class QuartzMonitorGrailsPlugin {
     def version = "0.2"
     def grailsVersion = "1.1 > *"
     def dependsOn = [quartz:"0.4.2"]
+    def loadAfter = ['database-migration']
     def pluginExcludes = [
             "grails-app/views/error.gsp"
     ]
